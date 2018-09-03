@@ -1,7 +1,6 @@
 This entire project is controlled via Terraform.
 The benefits of using Terraform is scability. AWS does have auto-scaling built in, but if a private cloud provider like OpenStack is used for example using Terraform you can scale up as Terraform keeps the state of the infrastructure already created. You can just choose a new `count` for the amount of instances you want and Terraform will provision only the new instances. This is all made possible through the terraform.tfstate file which tracks the current state of the infrastructure created via Terraform. After scaling up, one can add the new servers to a HAProxy server for load balancing.
 
-SEA Team, I do not want to incur charges from AWS for hosting a VPC/EC2/etc. It adds up quick :smiley: Once you guys want to test to see if the site loads/redirects from HTTP to HTTPs/etc just let me know and I can build it out quickly. Thanks!
 
 # Software Used in this Project:
 
@@ -12,8 +11,13 @@ SEA Team, I do not want to incur charges from AWS for hosting a VPC/EC2/etc. It 
 # Cloud Provider Used:
 
 - Amazon Web Services
+
 To run this project all you have to do is install terraform, ansible and awscli
 export aws access keys 
-and cd into Terraform 
+and cd into Terraform
+'''
+cd Terraform
+'''
+
 and run setup.sh using 
 bash setup.sh
