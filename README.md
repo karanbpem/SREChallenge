@@ -15,9 +15,5 @@ The benefits of using Terraform is scability. AWS does have auto-scaling built i
 To run this project all you have to do is install terraform, ansible and awscli
 export aws access keys 
 and cd into Terraform
-'''
-cd Terraform
-'''
-
 and run setup.sh using 
 bash setup.sh
