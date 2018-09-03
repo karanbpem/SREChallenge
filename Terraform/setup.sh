@@ -13,6 +13,8 @@ export public_key=$(cat $PWD/nginx-test-key.pub)
 echo "...Updating key.tf file with nginx-test-key.pub..."
 sed -i -e 's~public_key = ""*.$~public_key = "'"$public_key"'"~' key.tf
 
+sudo apt-get install awscli
+
 echo -n "Please enter your AWS Access Key: "
 read Access
 
