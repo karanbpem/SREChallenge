@@ -1,5 +1,12 @@
 #!/bin/bash
 
+sudo apt-get update -y
+sudo apt-get install python -y
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" -y
+python get-pip.py -y
+sudo apt install awscli
+sudo apt-install ansible
+
 # Initializing terraform files for the cloud provider
 echo "...Initializing working directory..."
 terraform init
